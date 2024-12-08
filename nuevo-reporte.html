@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Reporte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nuevo Reporte</h1>
+    </header>
+    <main>
+        <a href="index.html" class="volver">Volver a la Lista</a>
+        <form id="form-reporte" enctype="multipart/form-data">
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" placeholder="Describe el incidente" required>
+
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="ubicacion" placeholder="Lugar del incidente" required>
+
+            <label for="imagen">Subir Imagen:</label>
+            <input type="file" id="imagen" accept="image/*">
+
+            <img id="preview" class="preview-img" src="" alt="Vista previa de la imagen" style="display: none;">
+
+            <button type="submit">Guardar Reporte</button>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
